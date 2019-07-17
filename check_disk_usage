@@ -1,3 +1,4 @@
+---
 - name: Identify the space available in /
   # NOTE(hwoarang): df does not work reliably on btrfs filesystems
   # https://btrfs.wiki.kernel.org/index.php/FAQ#How_much_free_space_do_I_have.3F
@@ -15,3 +16,4 @@
   register: root_space_available
   tags:
     - check-disk-size
+...
